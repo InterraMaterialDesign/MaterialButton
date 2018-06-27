@@ -57,14 +57,14 @@ public class MainActivity extends AppCompatActivity {
         textButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), TextButton.class);
+                Intent intent = new Intent(view.getContext(),  TextButton.class);
                 startActivity(intent);
             }
         });
         unelevatedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), UnelevatedButton.class);
+                Intent intent = höylöylöy  new Intent(view.getContext(), UnelevatedButton.class);
                 startActivity(intent);
             }
         });
