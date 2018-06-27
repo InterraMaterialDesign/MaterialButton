@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Button</string>
+    <string name="hello">Hello World!</string>
+    <string name="click">Click</string>
+    <string name="button">Button</string>
+    <string name="basic_button">Material Components Button</string>
+    <string name="fab">FAB</string>
+    <string name="unelevated_button">Unelevated Material Button</string>
+    <string name="text_appearance">Text Appearance Material Button</string>
+    <string name="text_button">Text Material Button</string>
+    <string name="text_button2">Text Button</string>
+    <string name="object_animator">objectAnimator</string>
+</resources>

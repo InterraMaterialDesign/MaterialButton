@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/materialButton3"
+        style="@style/TextAppearance.MaterialComponents.MaterialButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="TA default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteX="117dp" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/button"
+        style="@style/text_style_button"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TA custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton4"
+        app:layout_editor_absoluteX="117dp"
+        app:layout_editor_absoluteY="294dp" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/materialButton2"
+        style="@style/text_appearance_secondary_button"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TAS custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_editor_absoluteX="117dp" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/materialButton4"
+        style="@style/TextAppearance.MaterialComponents.MaterialButton.Secondary"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/green"
+        android:text="TAS default2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_editor_absoluteX="117dp"
+        app:layout_editor_absoluteY="194dp" />
+
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/TextAppearance.MaterialComponents.MaterialButton.Secondary"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TAS default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton3"
+        app:layout_editor_absoluteX="117dp"
+        app:layout_editor_absoluteY="98dp" />
+
+
+</android.support.constraint.ConstraintLayout>

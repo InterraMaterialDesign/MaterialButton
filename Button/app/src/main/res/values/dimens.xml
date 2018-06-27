@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dimension_x">18dp</dimen>
+    <dimen name="width">32dp</dimen>
+    <dimen name="height">50dp</dimen>
+    <dimen name="dimension_fab">24dp</dimen>
+    <dimen name="dim_fab">48dp</dimen>
+    <dimen name="interpolator">5</dimen>
+
+</resources>
