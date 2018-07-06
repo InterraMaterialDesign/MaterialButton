@@ -10,4 +10,7 @@
     <string name="text_button">Text Material Button</string>
     <string name="text_button2">Text Button</string>
     <string name="object_animator">objectAnimator</string>
+    <string name="clickDefault">click default</string>
+    <string name="animation">Animation</string>
+    <string name="shadow">Shadow</string>
 </resources>
