@@ -6,82 +6,64 @@
     android:layout_height="match_parent"
     tools:layout_editor_absoluteY="81dp">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/text_appearance"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <android.support.design.button.MaterialButton
         android:id="@+id/materialButton3"
         style="@style/TextAppearance.MaterialComponents.MaterialButton"
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:clickable="true"
         android:focusable="true"
-        android:text="TA default"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_editor_absoluteX="117dp" />
+        android:text="@string/textappearance_default"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/button"
         style="@style/text_style_button"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TA custom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton4"
-        app:layout_editor_absoluteX="117dp"
-        app:layout_editor_absoluteY="294dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/textappearance_custom"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="@string/text_appearance_secondary"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton4" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/materialButton2"
         style="@style/text_appearance_secondary_button"
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="44dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TAS custom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_editor_absoluteX="117dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:text="@string/textapp_secondary_custom"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <android.support.design.button.MaterialButton
         android:id="@+id/materialButton4"
         style="@style/TextAppearance.MaterialComponents.MaterialButton.Secondary"
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/green"
-        android:text="TAS default2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:layout_editor_absoluteX="117dp"
-        app:layout_editor_absoluteY="194dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:text="@string/textapp_secondary_default"
+        android:backgroundTint="@color/colorSecondary"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton2" />
 
-
-    <Button
-        android:id="@+id/button4"
-        style="@style/TextAppearance.MaterialComponents.MaterialButton.Secondary"
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TAS default"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton3"
-        app:layout_editor_absoluteX="117dp"
-        app:layout_editor_absoluteY="98dp" />
 
 
 </android.support.constraint.ConstraintLayout>

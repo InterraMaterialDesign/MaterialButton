@@ -17,4 +17,6 @@
     <color name="brown">#6D4C41</color>
     <color name="orange">#E64A19</color>
     <color name="a">#7b000000</color>
+    <color name="light_blue">#B2EBF2</color>
+    <color name="buttonTextColor">#6200ee</color>
 </resources>

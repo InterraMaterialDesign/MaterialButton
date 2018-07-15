@@ -31,6 +31,9 @@
         <activity android:name=".UnelevatedButton">
 
         </activity>
+        <activity android:name=".ButtonFeatures">
+
+        </activity>
     </application>
 
 </manifest>

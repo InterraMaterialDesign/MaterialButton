@@ -17,39 +17,32 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ConstraintLayout myConstraint;
-    private TextView basicButton;
-    private TextView fab;
-    private TextView unelevatedButton;
-    private TextView textAppearance;
-    private TextView textButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button materialButton = findViewById(R.id.basicButton);
+        Button textButton = findViewById(R.id.textButton);
+        Button textAppearance = findViewById(R.id.textAppearance);
+        Button fab = findViewById(R.id.fab);
+        Button unelevated = findViewById(R.id.unelevatedButton);
+        Button explore1 =  findViewById(R.id.explore1);
 
-        basicButton = (TextView) findViewById(R.id.basicButton);
-        fab = (TextView) findViewById(R.id.fab);
-        unelevatedButton = (TextView)findViewById(R.id.unelevatedButton);
-        textAppearance = (TextView) findViewById(R.id.textAppearence);
-        textButton = (TextView) findViewById(R.id.textButton);
+        explore1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), ButtonFeatures.class);
+                startActivity(intent);
+            }
+        });
 
-
-        basicButton.setOnClickListener(new View.OnClickListener() {
+        materialButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), BasicButton.class);
-                startActivity(intent);
-        }
-
-        });
-
-        textAppearance.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), TextAppearance.class);
                 startActivity(intent);
             }
         });
@@ -61,13 +54,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        unelevatedButton.setOnClickListener(new View.OnClickListener() {
+
+        textAppearance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), UnelevatedButton.class);
+                Intent intent = new Intent(view.getContext(), TextAppearance.class);
                 startActivity(intent);
             }
         });
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,13 +71,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        String s1 = new String("ahmet");
-        String s2 = "ahmet";
-        String s3 = "ahmet";
-
-        if(s1 == s2) {
-            Log.v(s1,"s1 eşittir s2");
-        }
+        unelevated.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), UnelevatedButton.class);
+                startActivity(intent);
+            }
+        });
     }
 }
 

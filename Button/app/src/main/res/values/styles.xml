@@ -41,7 +41,6 @@
     </style>
 
     <style name="text_appearance_secondary_button" parent="TextAppearance.MaterialComponents.MaterialButton.Secondary">
-
         <item name="android:textColor">@color/purple</item>
     </style>
 
@@ -81,6 +80,12 @@
     </style>
 
 
+    <style name="outlinedButton" parent="Widget.MaterialComponents.Button">
+        <item name="background">@drawable/outlined_shape</item>
+        <item name="rippleColor">@color/buttonTextColor</item>
+        <item name="android:insetLeft">16dp</item>
+        <item name="android:insetRight">16dp</item>
+    </style>
 
 
 </resources>
